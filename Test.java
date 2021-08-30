@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Test {
     // 找出数组中沿上下左右方向的递增路径的最大长度
     public static void main(String[] args) {

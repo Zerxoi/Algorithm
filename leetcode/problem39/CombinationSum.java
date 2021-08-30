@@ -22,11 +22,11 @@ public class CombinationSum {
         if (index == candidates.length || target < 0) {
             return;
         }
-        backtrack(lists, candidates, index + 1, target, list);
         if (target - candidates[index] >= 0) {
             list.add(candidates[index]);
             backtrack(lists, candidates, index, target - candidates[index], list);
             list.remove(list.size() - 1);
         }
+        backtrack(lists, candidates, index + 1, target, list);
     }
 }
